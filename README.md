@@ -33,7 +33,7 @@ time, then press `return` after each one to download, review, and execute the
 script respectively:
 
 ```sh
-curl --remote-name https://raw.githubusercontent.com/18F/laptop/master/mac
+curl --remote-name https://raw.githubusercontent.com/zentetsukenz/laptop/master/mac
 cat mac
 bash mac 2>&1 | tee ~/laptop.log
 ```
@@ -152,7 +152,7 @@ Laptop functions such as `fancy_echo`, `brew_install_or_upgrade`,
 cd ~
 
 # Download the sample file to your computer
-curl --remote-name https://raw.githubusercontent.com/18F/laptop/master/.laptop.local
+curl --remote-name https://raw.githubusercontent.com/zentetsukenz/laptop/master/.laptop.local
 ```
 
 Credits
