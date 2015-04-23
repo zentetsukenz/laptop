@@ -144,11 +144,7 @@ brew_install_or_upgrade 'postgresql'
 fancy_echo 'Restarting postgres...'
 brew services restart postgresql
 
-brew_install_or_upgrade 'mysql'
-fancy_echo 'Restarting mysql...'
-brew services restart mysql
-sleep 2
-mysql.server start
+brew_install_or_upgrade 'mongodb'
 
 brew_install_or_upgrade 'redis'
 fancy_echo 'Restarting redis...'
@@ -161,7 +157,7 @@ brew_install_or_upgrade 'hub'
 # shellcheck disable=SC2016
 append_to_file "$HOME/.zshrc" 'eval "$(hub alias -s)"'
 
-brew_install_or_upgrade 'node'
+# brew_install_or_upgrade 'node'
 brew_install_or_upgrade 'python3'
 
 if ! pip3 list | ag "virtualenvwrapper" > /dev/null; then
@@ -207,10 +203,7 @@ brew_install_or_upgrade 'brew-cask'
 
 brew_tap 'caskroom/versions'
 
-brew_cask_install 'cloud'
 brew_cask_install 'flux'
-brew_cask_install 'github'
-brew_cask_install 'slack'
 brew_cask_install 'sublime-text3'
 
 if [ -f "$HOME/.laptop.local" ]; then
@@ -220,8 +213,5 @@ fi
 append_to_file "$HOME/.rvmrc" 'rvm_auto_reload_flag=2'
 
 brew_tap 'pivotal/tap'
-brew_install_or_upgrade 'cloudfoundry-cli'
 
-if [ ! -f "$HOME/.ssh/github_rsa.pub" ]; then
-  open ~/Applications/GitHub.app
-fi
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | PROFILE="$HOME/.zshrc" bash
