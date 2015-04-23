@@ -1,6 +1,6 @@
 Laptop
 ======
-[![Build Status](https://travis-ci.org/18F/laptop.svg)](https://travis-ci.org/18F/laptop)
+[![Build Status](https://travis-ci.org/zentetsukenz/laptop.svg)](https://travis-ci.org/zentetsukenz/laptop)
 
 Laptop is a script to set up an OS X computer for web development.
 
@@ -58,23 +58,19 @@ whole log file as an attachment.
 What it sets up
 ---------------
 
-* [CloudApp] for sharing screenshots and making an animated GIF from a video
-* [Cloud Foundry CLI] for command line access to 18F's Cloud Foundry-based application platform
 * [Flux] for adjusting your Mac's display color so you can sleep better
-* [GitHub for Mac] for setting up your SSH keys automatically
 * [Homebrew] for managing operating system libraries
 * [Homebrew Cask] for quickly installing Mac apps from the command line
 * [Homebrew Services] so you can easily stop, start, and restart services
 * [hub] for interacting with the GitHub API
 * [ImageMagick] for cropping and resizing images
-* [MySQL] for storing relational data
-* [Node.js] and [NPM], for running apps and installing JavaScript packages
+* [NVM] for managing Node version
 * [Postgres] for storing relational data
+* [MongoDB] for storing NoSql data
 * [Python 3] for programming software and data analysis
 * [Qt] for headless JavaScript testing via Capybara Webkit
 * [Redis] for storing key-value data
 * [RVM] for managing Ruby versions (includes [Bundler] and the latest [Ruby])
-* [Slack] for communicating with your team
 * [Sublime Text 3] for coding all the things
 * [The Silver Searcher] for finding things in files
 * [Virtualenv] for creating isolated Python environments
@@ -82,25 +78,20 @@ What it sets up
 * [Zsh] as your shell
 
 [Bundler]: http://bundler.io/
-[CloudApp]: http://getcloudapp.com/
-[Cloud Foundry CLI]: https://github.com/cloudfoundry/cli
 [Flux]: https://justgetflux.com/
-[GitHub for Mac]: https://mac.github.com/
 [Homebrew]: http://brew.sh/
 [Homebrew Cask]: http://caskroom.io/
 [Homebrew Services]: https://github.com/gapple/homebrew-services
 [hub]: https://github.com/github/hub
 [ImageMagick]: http://www.imagemagick.org/
-[MySQL]: https://www.mysql.com/
-[Node.js]: http://nodejs.org/
-[NPM]: https://www.npmjs.org/
+[NVM]: https://github.com/creationix/nvm
 [Postgres]: http://www.postgresql.org/
+[MongoDB]: https://www.mongodb.org/
 [Python 3]: https://www.python.org/
 [Qt]: http://qt-project.org/
 [Redis]: http://redis.io/
 [Ruby]: https://www.ruby-lang.org/en/
 [RVM]: https://github.com/wayneeseguin/rvm
-[Slack]: https://slack.com/
 [Sublime Text 3]: http://www.sublimetext.com/3
 [The Silver Searcher]: https://github.com/ggreer/the_silver_searcher
 [Virtualenv]: https://virtualenv.pypa.io/en/latest/
@@ -167,14 +158,14 @@ curl --remote-name https://raw.githubusercontent.com/18F/laptop/master/.laptop.l
 Credits
 -------
 
-The 18F laptop script is based on and inspired by
-[thoughtbot's laptop](https://github.com/thoughtbot/laptop) script.
+The zentetsukenz laptop script is forked from
+[18F's laptop](https://github.com/18F/laptop) script.
 
 ### Public domain
 
 thoughtbot's original work remains covered under an [MIT License](https://github.com/thoughtbot/laptop/blob/c997c4fb5a986b22d6c53214d8f219600a4561ee/LICENSE).
 
-18F's work on this project is in the worldwide [public domain](LICENSE.md), as are contributions to our project. As stated in [CONTRIBUTING](CONTRIBUTING.md):
+zentetsukenz's work on this project is in the worldwide [public domain](LICENSE.md), as are contributions to our project. As stated in [CONTRIBUTING](CONTRIBUTING.md):
 
 > This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
 >
