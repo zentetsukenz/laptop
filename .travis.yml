@@ -2,10 +2,12 @@ sudo: false
 
 language: sh
 
-before_script:
-  - sudo add-apt-repository -y "deb http://mirrors.kernel.org/ubuntu utopic main universe"
-  - sudo apt-get -y update
-  - sudo apt-get -y install shellcheck
+addons:
+  apt:
+    sources:
+    - debian-sid
+    packages:
+    - shellcheck
 
 script:
   - shellcheck mac
