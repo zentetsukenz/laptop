@@ -1,3 +1,5 @@
+sudo: false
+
 language: sh
 
 before_script:
